@@ -1,0 +1,134 @@
+:root {
+  --main-blue: #0866ff;
+  --main-blue-hover: #0b5bdb;
+  --main-green: #42b72a;
+  --main-green-hover: #3a9627;
+  --main-bg: #f0f2f5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.left-sec {
+  width: 100%;
+}
+
+.left-sec p {
+  margin-left: 30px;
+  margin-top: 0;
+  font-size: 26px;
+  width: 60%;
+}
+
+.right-sec {
+  /* width: 100%; */
+  /* margin: auto; */
+  text-align: center;
+}
+
+.right-sec form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 380px;
+  width: 80%;
+  margin: auto;
+  /* background-color: white; */
+  padding: 16px;
+  border-radius: 6px;
+  text-align: center;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.right-sec form input {
+  padding: 15px;
+  border-radius: 6px;
+  outline: none;
+  /* border: 1px solid #e7e7e7; */
+}
+
+.right-sec form .login-btn {
+  padding: 13px 0;
+  border-radius: 6px;
+  border: 0;
+  background: var(--main-blue);
+  /* color: white; */
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right-sec form .login-btn:hover {
+  background-color: var(--main-blue-hover);
+}
+
+.right-sec form a {
+  text-decoration: none;
+  color: #1877f4;
+  font-size: 14px;
+}
+
+.right-sec form hr {
+  width: 100%;
+  /* border-color: white; */
+}
+
+.new-acc-btn {
+  width: fit-content;
+  margin: auto;
+  padding: 13px;
+  border-radius: 6px;
+  border: 0;
+  background: var(--main-green);
+  /* color: white; */
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.new-acc-btn:hover {
+  background: var(--main-green-hover);
+}
+
+.new-pg {
+  padding-top: 14px;
+}
+.new-pg a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  section {
+    flex-direction: row;
+    width: 90%;
+  }
+  .right-sec form {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  section {
+    flex-direction: row;
+    width: 70%;
+  }
+  .right-sec form {
+    width: 350px;
+  }
+}
